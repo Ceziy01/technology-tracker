@@ -24,15 +24,30 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.div-btns {
+  margin-bottom: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.quick-btn {
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+  background: #bababa;
+  margin: 5px;
+  transition: 0.5s;
+  /* transform-origin: right bottom; */
 }
+
+/* .quick-btn:hover {
+  transform: rotate(5deg);
+} */
+
+
+
+/* * {
+  transform: rotate3d(1, 1, 0, 15deg);
+} */
+
+
+

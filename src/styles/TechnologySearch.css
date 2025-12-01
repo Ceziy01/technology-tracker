@@ -1,0 +1,30 @@
+.search-div {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 10px
+}
+
+.search-div button {
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+  background: #bababa;
+}
+
+.search-div input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.search-div input:focus {
+  outline: none;
+}
+
+.search-div button.active {
+  background-color: #007bff;
+  color: white;
+}
