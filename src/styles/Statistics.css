@@ -30,7 +30,7 @@
 
 .progress-fill {
   height: 100%;
-  background: rgb(0, 145, 255);
+  background: #10b981;
   transition: width 0.4s ease;
 }
 

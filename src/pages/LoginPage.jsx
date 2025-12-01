@@ -34,7 +34,7 @@ function LoginPage({ onLogin }) {
         </div>
         
         <div className="form-group">
-          <label>Пароль:</label>
+          <label style={{marginTop: '20px'}}>Пароль:</label>
           <input
             type="password"
             value={password}
@@ -43,7 +43,7 @@ function LoginPage({ onLogin }) {
           />
         </div>
         
-        <button type="submit">Войти</button>
+        <button type="submit" className='btn btn-add-technology' style={{marginTop: '40px'}}>Войти</button>
       </form>
     </div>
   );

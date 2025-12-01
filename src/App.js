@@ -2,11 +2,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useState, useEffect } from 'react';
 
 import useTechnologies from './hooks/useTechnologies.js';
-import useTechnologiesApi from './hooks/useTechnologiesApi.js';
 
 import Navigation from './components/Navigation.js';
 import Statistics from './components/Statistics.jsx';
-import RoadmapImporter from "./components/RoadmapImporter.js";
 import ProtectedRoute from './components/ProtectedRoute';
 
 import TechnologiesPage from './pages/TechnologiesPage.js';
@@ -14,7 +12,6 @@ import AddTechnologyPage from "./pages/AddTechnologyPage.js";
 import HomePage from './pages/HomePage.js'
 import SettingsPage from "./pages/SettingsPage.js";
 import LoginPage from './pages/LoginPage.jsx'
-import TestPage from './pages/TestPage.js'
 
 import './App.css';
 
@@ -54,7 +51,6 @@ function App() {
           <Route path='/stats' element={<Statistics technologies={technologies}/>} />
           <Route path='/settings' element={<ProtectedRoute isLoggedIn={isLoggedIn}><SettingsPage/></ProtectedRoute>}/>
           <Route path='/login' element={<LoginPage onLogin={handleLogin}/>}/>
-          <Route path='/test' element={<TestPage/>}></Route>
         </Routes>
       </div>
     </BrowserRouter>

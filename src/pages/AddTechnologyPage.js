@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+import '../styles/AddTechnologyPage.css'
+
 function AddTechnologyPage({ onAddTechnology }) {
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
@@ -67,12 +69,12 @@ function AddTechnologyPage({ onAddTechnology }) {
         </div>
 
         <div className="form-actions">
-          <button type="submit" className="btn btn-primary">
+          <button type="submit" className="btn btn-add-technology">
             Добавить технологию
           </button>
           <button 
             type="button" 
-            className="btn btn-secondary"
+            className="btn btn-cancel"
             onClick={() => navigate('/technologies')}
           >
             Отмена
